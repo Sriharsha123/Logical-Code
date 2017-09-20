@@ -1,0 +1,72 @@
+Data Pull Page Services
+
+http://localhost:7070/web/DataFetch/AllCategory >> gets all the categories
+
+>> Gives all the category deatils
+
+[{"avpKey":3506697,"attributeValue":"ADULT INCONTINENCE"},....]
+
+http://localhost:7070/web/LoadGrid/data?Grid_Name=CATEGORY_STATUS&projectID=228 
+
+>> Gives the details of all the category that are pulled && there status
+
+
+http://localhost:7070/web/DataFetch/GetTimePeriod
+
+>> get the time period
+
+http://localhost:7070/web/DataFetch/GetSourceData?projectID=228
+
+>> get the source data dynamically
+
+{"data":[{"sourceID":1,"sourceName":"US Panel"},
+{"sourceID":2,"sourceName":"Retailer FSP"},
+{"sourceID":3,"sourceName":"Survey"},
+{"sourceID":4,"sourceName":"International Panel"}
+,{"sourceID":5,"sourceName":"SKB Data"}],"selectedSourceData":null}
+
+
+
+
+{"country": [
+    {
+        "name": "United States",
+        "id": "usa",
+        "states": [
+            {
+                "name": "State 1 USA",
+                "id": "usaState1",
+                "cities": [
+                    {
+                        "name": "City 1",
+                        "id": "usaState1City1",
+                        "area": "12345 sqkm"
+                    },
+                    {
+                        "name": "City 2",
+                        "id": "usaState1City2",
+                        "area": "12345 sqkm"
+                    }
+                ]
+            },
+            {
+                "name": "State 2 USA",
+                "id": "usaState2",
+                "cities": [
+                    {
+                        "name": "City 3",
+                        "id": "usaState2City3",
+                        "area": "12345 sqkm"
+                    },
+                    {
+                        "name": "City 4",
+                        "id": "usaState2City4",
+                        "area": "12345 sqkm"
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+
+}
